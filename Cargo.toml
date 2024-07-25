@@ -11,6 +11,8 @@ description = "ArceOS user program library for linux apps with posix_syscall"
 [features]
 default = ["monolithic"]
 
+async = ["axfeat/async", "arch_boot/async"]
+
 monolithic = ["arch_boot/monolithic", "axfeat/monolithic", "paging", "fs", "multitask", "irq", "net"]
 
 alloc = ["axfeat/alloc"]
